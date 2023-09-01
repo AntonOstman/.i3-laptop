@@ -233,15 +233,15 @@ set $xdisplay 1778
 set $ydisplay 1000
 #scratch pad drowdown
 exec --no-startup-id discord
-bindsym $mod+Shift+d [class="discord"] scratchpad show; resize set $xdisplay $ydisplay; move position center;
+bindsym $mod+Shift+d [class="discord"] scratchpad show; [class="discord"] resize set $xdisplay $ydisplay; move position center;
 for_window [class="discord"] move scratchpad;
 
 #scratch pad drowdown
 exec --no-startup-id alacritty --class scratchTerm,scratchTerm -e tmux
-bindsym $mod+o [class="scratchTerm"] scratchpad show; resize set $xdisplay $ydisplay; move position center;
+bindsym $mod+o [class="scratchTerm"] scratchpad show; [class="scratchTerm"] resize set $xdisplay $ydisplay; move position center;
 for_window [class="scratchTerm"] move scratchpad
 
 #scratchpad ai
 exec --no-startup-id chromium --class="synonym_ai" https://chat.openai.com/chat
-bindsym $mod+u [class="synonym_ai"] scratchpad show; resize set $xdisplay $ydisplay; move position center;
+bindsym $mod+u [class="synonym_ai"] scratchpad show; [class="synonym_ai"] resize set $xdisplay $ydisplay; move position center;
 for_window [class="synonym_ai"] move scratchpad
