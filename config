@@ -239,7 +239,7 @@ for_window [class="discord"] move scratchpad;
 
 #scratchpad alacritty tmux
 exec --no-startup-id alacritty --class scratchTerm,scratchTerm -e tmux
-bindsym $mod+o [class="scratchTerm"] scratchpad show; [class="scratchTerm"] resize set 1800 1200; move position center;
+bindsym $mod+o [class="scratchTerm"] scratchpad show; [class="scratchTerm"] resize set 1900 1050; move position center;
 for_window [class="scratchTerm"] move scratchpad
 
 #scratchpad ai
@@ -254,6 +254,3 @@ exec --no-startup-id xournalpp
 bindsym $mod+i [class="Xournalpp"] scratchpad show; [class="Xournalpp"] resize set $xdisplayNotes $ydisplayNotes; move position center;
 for_window [class="Xournalpp"] move scratchpad
 
-
-bindsym $mod+Shift+n exec nvim
-bindsym $mod+Shift+m exec brightnessctl set 5%-
